@@ -36,3 +36,10 @@ Route::get('/mahasiswa', function () {
     //return view('mahasiswa.index')->with('mhs',$data);
     return view('mahasiswa.index',compact('kelas','data'));
 });
+
+Route::get('/mahasiswa',function () {
+    $nama = "Aidil Ridha";
+    $nilai = 50;
+
+    return view('mahasiswa',compact('nama','nilai'));
+});
